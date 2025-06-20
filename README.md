@@ -33,6 +33,8 @@ Object detection repository
 - [SODA](https://shaunyuan22.github.io/SODA/) : This is an open source large scale dataset. A has 2513 high-resolution images of aerial scenes, which has 872069 instances annotated with oriented rectangle box annotations over 9 classes. Major bias [clear urban picture in Africa noted as rural.
 - [VisDrone](https://github.com/VisDrone/DroneVehicle) : Large scale drone dataset
 
+- [UAV vehicle detection dataset]{}: from previous lab students. Orientation-and scale-invariant multi-vehicle detection and tracking from unmanned aerial videos
+
 - [ImageNet](https://image-net.org/challenges/LSVRC/) : "ImageNet Large Scale Visual Recognition Challenge".
 - [LEVIR Ship detection](https://github.com/WindVChen/LEVIR-Ship) : Tiny ship detection
 

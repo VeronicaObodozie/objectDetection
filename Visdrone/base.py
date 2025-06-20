@@ -212,7 +212,6 @@ class VisDroneDataset(torch.utils.data.Dataset):
     def __len__(self):
         return len(self.imgs)
 
-
 # visualize bounding boxes in the image
 def plot_bbox(img, target):
     # plot the image and bboxes
@@ -327,6 +326,12 @@ model = YOLO("yolo11n.pt")
 results = model.train(data="coco8.yaml", epochs=3)
 # Train the model on the COCO8 example dataset for 100 epochs
 results = model.train(data="coco8.yaml", epochs=100, imgsz=640)
+# Visdrone
+# Load a pretrained model
+model = YOLO("yolo11n.pt")
+
+# Train the model
+results = model.train(data="VisDrone.yaml", epochs=100, imgsz=640)
 # Evaluate the model's performance on the validation set
 results = model.val()
 

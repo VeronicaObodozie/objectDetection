@@ -58,8 +58,8 @@ def data_load(batch_size, num_workers):
 
     # Loading training set, using 20% for validation
     train_set = VisDroneDataset(files_dir_train+'/images',files_dir_train+'/annotations', 1224, 724, transforms=data_transforms)
-    val_set = isDroneDataset(files_dir_val+'/images',files_dir_val+'/annotations', 1224, 724, transforms=data_transforms)
-    test_set = isDroneDataset(files_dir_test+'/images',files_dir_test+'/annotations', 1224, 724, transforms=data_transforms)
+    val_set = VisDroneDataset(files_dir_val+'/images',files_dir_val+'/annotations', 1224, 724, transforms=data_transforms)
+    test_set = VisDroneDataset(files_dir_test+'/images',files_dir_test+'/annotations', 1224, 724, transforms=data_transforms)
 
 # split the dataset in train and test set
 torch.manual_seed(1)
